@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.example.saad.bookturfs.Book">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/relativeLayout"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/boundary"
+        android:padding="20dp"
+        tools:context="com.example.saad.bookturfs.Book">
+
+        <TextView
+            android:id="@+id/label2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/label1"
+            android:layout_marginTop="10dp"
+            android:text="Name:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/label7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/label2"
+            android:layout_marginTop="10dp"
+            android:text="Team Name:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtTeamName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/label7"
+            android:layout_alignEnd="@+id/txtName"
+            android:text="TeamName"
+            android:textColor="#606e84"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/label3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/label7"
+            android:layout_marginTop="10dp"
+            android:text="Contact:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtVenue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:text="TextView"
+            android:textColor="#606e84"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/label1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Venue"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/label2"
+            android:layout_alignBottom="@+id/label2"
+            android:layout_alignParentEnd="true"
+            android:text="TextView"
+            android:textColor="#606e84"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/label4"
+            android:layout_alignParentEnd="true"
+            android:clickable="false"
+            android:text="TextView"
+            android:textColor="#606e84"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/label4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/label3"
+            android:layout_marginTop="10dp"
+            android:text="Timings:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtTimings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/label4"
+            android:layout_alignEnd="@+id/txtName"
+            android:text="Timing"
+            android:textColor="#606e84"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/label5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/label4"
+            android:layout_marginTop="10dp"
+            android:text="Date:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/label5"
+            android:layout_alignEnd="@+id/txtName"
+            android:text="Date"
+            android:textColor="#606e84"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/label6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/label5"
+            android:layout_marginTop="10dp"
+            android:text="Status:"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/label6"
+            android:layout_alignEnd="@+id/txtName"
+            android:text="Date"
+            android:textColor="#606e84"
+            android:textSize="20sp" />
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Booking Details"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <com.brouding.blockbutton.BlockButton
+        android:id="@+id/btnContact"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:buttonColor="#4c535e"
+        app:buttonDisabledColor="#999999"
+        app:buttonDisabledGapColor="#FF999999"
+        app:buttonGapColor="#000000"
+        app:pushDepthDp="2">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="10dp"
+            android:text="Contact Team"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </com.brouding.blockbutton.BlockButton>
+</RelativeLayout>

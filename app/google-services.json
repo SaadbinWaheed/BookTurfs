@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "728259956208",
+    "firebase_url": "https://turf-bookings.firebaseio.com",
+    "project_id": "turf-bookings",
+    "storage_bucket": "turf-bookings.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728259956208:android:97795d19cd360a49",
+        "android_client_info": {
+          "package_name": "com.potato.saad.bookturfs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728259956208-kiongpqi2t53inkcnm5hurnrb2ao6mco.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFb0PE2EY9pSJiiigxCM6ruqQL8NPKK3s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

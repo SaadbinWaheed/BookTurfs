@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainMenu">
+
+    <com.github.sundeepk.compactcalendarview.CompactCalendarView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/compactcalendar_view"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtMonth"
+        app:compactCalendarBackgroundColor="#606e84"
+        app:compactCalendarCurrentDayBackgroundColor="#000000"
+        app:compactCalendarCurrentSelectedDayBackgroundColor="#3c3c40"
+        app:compactCalendarMultiEventIndicatorColor="#000000"
+        app:compactCalendarTargetHeight="200dp"
+        app:compactCalendarTextColor="#ffffff"
+        app:compactCalendarTextSize="12dp"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <TextView
+        android:id="@+id/txtMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#606e84"
+        android:text="Feburary"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="20sp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@+id/btnContact"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/compactcalendar_view"
+        android:background="#ffffff" />
+
+    <com.brouding.blockbutton.BlockButton
+        android:id="@+id/btnContact"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        app:buttonColor="#4c535e"
+        app:buttonDisabledColor="#999999"
+        app:buttonDisabledGapColor="#FF999999"
+        app:buttonGapColor="#000000"
+        app:pushDepthDp="2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+
+            android:enabled="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="10dp"
+            android:text="Book Now"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </com.brouding.blockbutton.BlockButton>
+
+    <TextView
+        android:id="@+id/txtNoData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/compactcalendar_view"
+
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:text="No Bookings for this Day"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+
+
+</RelativeLayout>

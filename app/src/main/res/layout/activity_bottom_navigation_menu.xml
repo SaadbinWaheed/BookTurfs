@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+    tools:context="com.potato.saad.bookturfs.BottomNavigationMenu"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/fragmentContainer"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#ffffff"
+        >
+
+    </RelativeLayout>
+
+    <com.luseen.spacenavigation.SpaceNavigationView
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="71dp"
+        android:layout_alignParentStart="false"
+        android:layout_gravity="bottom"
+        android:background="@color/colorTransparent">
+
+    </com.luseen.spacenavigation.SpaceNavigationView>
+
+
+
+</LinearLayout>

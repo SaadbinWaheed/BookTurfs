@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".BookingDetails">
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Place Booking"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/TextView"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/boundary"
+    android:padding="20dp"
+    tools:context="com.example.saad.toptastecreditapp.MainActivity">
+
+    <Spinner
+        android:id="@+id/spinner_venue"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView3"
+        android:ems="10"
+        android:textAlignment="textStart"
+        android:tooltipText="Venue" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Venue:"
+        android:textColorLink="@color/space_default_color"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtStartingTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edNumber"
+        android:layout_below="@+id/edNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Starting Time"
+        android:inputType="textPersonName|number"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtEndingTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtStartingTime"
+        android:layout_below="@+id/txtStartingTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="EndingTime"
+        android:inputType="textPersonName|number"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txtEndingTime"
+        android:layout_below="@+id/txtEndingTime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Date"
+        android:inputType="textPersonName|number"
+        android:padding="5dp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner_venue"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textCapWords|textPersonName"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/edTeamName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:hint="Team Name"
+        android:inputType="textCapWords|textPersonName"
+        android:textAlignment="center" />
+    <EditText
+        android:id="@+id/edNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/edTeamName"
+        android:layout_below="@+id/edTeamName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:focusable="auto"
+        android:hint="Contact Number"
+        android:inputType="phone"
+        android:textAlignment="center"
+        android:textSize="18sp" />
+
+    <com.brouding.blockbutton.BlockButton
+        android:id="@+id/btnContact"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:buttonColor="#4c535e"
+        app:buttonDisabledColor="#999999"
+        app:buttonDisabledGapColor="#FF999999"
+        app:buttonGapColor="#000000"
+        app:pushDepthDp="2">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="10dp"
+            android:text="Place Booking"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </com.brouding.blockbutton.BlockButton>
+
+    <com.brouding.blockbutton.BlockButton
+        android:id="@+id/btn_RequestOpponent"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btnContact"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:buttonColor="#4c535e"
+        app:buttonDisabledColor="#999999"
+        app:buttonDisabledGapColor="#FF999999"
+        app:buttonGapColor="#000000"
+        app:pushDepthDp="2">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:paddingBottom="10dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="10dp"
+            android:text="Request Opponent"
+            android:textAlignment="center"
+            android:textColor="#ffffff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </com.brouding.blockbutton.BlockButton>
+</RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/relativeLayout2"
+        android:layout_alignStart="@+id/relativeLayout2"
+        android:layout_below="@+id/relativeLayout2"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>
